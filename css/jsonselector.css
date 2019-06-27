@@ -1,0 +1,146 @@
+body {
+    background: #3d3d8e;
+}
+
+.body-inner {
+    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.card-center {
+    text-align: center;
+}
+
+.card {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    min-width: 500px;
+    left: 10%;
+    top: 10%;
+}
+
+.card-body {
+    height: calc(100% - 120px);
+}
+
+.card-footer, .card-header {
+    height: 60px;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: xx-large;
+    color: lightgray;
+    padding-top: 5px;
+}
+
+textarea {
+    width: 80%;
+    height: 80%;
+}
+
+#treeCard {
+    display: none;
+}
+
+.treeItem {
+    color: white;
+}
+
+#selectorBox {
+    padding-left: 16px;
+    padding-top: 4px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid black;
+}
+
+.copiedModal {
+    padding-top: 35px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 10px;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.value {
+    color: black;
+    z-index: 20;
+}
+
+.value:hover {
+    border: 1px solid #d0d0d0;
+}
+
+
+.tab0 {
+    margin-left: 0;
+}
+
+.tab1 {
+    margin-left: 20px;
+}
+
+.tab2 {
+    margin-left: 40px;
+}
+
+.tab3 {
+    margin-left: 60px;
+}
+
+.tab4 {
+    margin-left: 80px;
+}
+
+.tab5 {
+    margin-left: 100px;
+}
+
+.tab6 {
+    margin-left: 120px;
+}
+
+.tab7 {
+    margin-left: 140px;
+}
+
+.tab8 {
+    margin-left: 160px;
+}
+
+.tab9 {
+    margin-left: 180px;
+}
+
+.tab10 {
+    margin-left: 200px;
+}
+
+.tab11 {
+    margin-left: 240px;
+}
+
+.tab0 {
+    margin-left: 0;
+}
+
+.treeItem {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+}

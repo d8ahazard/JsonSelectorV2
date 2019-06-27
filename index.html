@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Selector V2</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/jsonselector.css"/>
+</head>
+<body>
+<div class="header">JSON Selector V2</div>
+<div class="card card-center text-white bg-secondary mb-3" id="inputCard">
+    <div class="card-body">
+        <label for="jsonInput">Paste your JSON Below</label><br>
+        <textarea id="jsonInput" class="form-input"></textarea>
+    </div>
+    <div class="card-footer">
+        <div class="btn btn-primary" id="process">PROCESS</div>
+    </div>
+</div>
+
+<div class="card card-left text-white bg-secondary mb-3" id="treeCard">
+    <div class="card-header">
+        <div id="selectorBox"></div>
+    </div>
+    <div class="card-body">
+        <div class="body-inner" id="treeBody"></div>
+
+    </div>
+    <div class="card-footer">
+        <div class="btn btn-primary" id="clear">CLEAR</div>
+    </div>
+</div>
+
+<div class="copiedModal">Value copied to clipboard.</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jsonselector.js"></script>
+</body>
+</html>
