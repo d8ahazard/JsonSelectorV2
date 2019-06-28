@@ -82,7 +82,9 @@ textarea {
     z-index: 20;
 }
 
-.value:hover {
+
+
+.treeItem:hover {
     border: 1px solid #d0d0d0;
 }
 
