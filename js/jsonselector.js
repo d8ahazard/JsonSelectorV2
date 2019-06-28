@@ -136,9 +136,11 @@ function loopTree(json, count, parent) {
             count += 1;
             subKey += " [" + loopTree(data, count, pSel) + "]";
             count -= 1;
-        } else {
+        } else if ($.type(data) === 'string') {
             console.log("This is a string.");
             subKey += '"' + data + '"';
+        } else {
+            subKey = data;
         }
         if (len > i) comma = ", ";
         if ($.type(data) === 'object' || $.type(data) === 'array') {
