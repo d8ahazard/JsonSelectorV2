@@ -38,7 +38,7 @@ $(function(){
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
-        showCopied("Selector coped to clipboard.");
+        showMsg("Selector coped to clipboard.");
     });
 
 
@@ -52,13 +52,13 @@ $(function(){
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
-        showCopied(typeString + " copied to clipboard.");
+        showMsg(typeString + " copied to clipboard.");
         return false;
     });
 
 });
 
-function showCopied(msg) {
+function showMsg(msg) {
     var cm = $('.copiedModal');
     cm.html(msg);
     cm.fadeIn();
@@ -92,6 +92,7 @@ function validateJSON(json) {
     try {
         var jsonArray = JSON.parse(json);
     } catch (e) {
+        showMsg('INVALID JSON: ' + e);
         return false;
     }
     return jsonArray;
@@ -187,10 +188,4 @@ function getCookie(name) {
         if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
     }
     return null;
-}
-
-function rtrim(stringToTrim) {
-
-    return stringToTrim.replace(/\s+$/,"");
-
 }
