@@ -22,7 +22,7 @@ $(function(){
        clearInput();
     });
 
-    $(document).on('click', '.value', function() {
+    $(document).on('click', '.treeItem', function() {
         var sel2 = $(this).attr('data-selector');
        console.log("Value click: " + sel2);
        $('#selectorBox').html(sel2);
@@ -43,10 +43,10 @@ $(function(){
     });
 
 
-    $(document).on('dblclick', '.value, #treeBody', function() {
+    $(document).on('dblclick', '.treeItem, .value, #treeBody', function() {
         console.log("Doubleclick!");
-        var typeString = ($(this).hasClass('value')) ? 'Value' : 'JSON';
-        var selector = $(this).text().replace(/,\s*$/, "");
+        var typeString = ($(this).hasClass('treeItem')) ? 'Selector': ($(this).hasClass('value')) ? 'Value' : 'JSON';
+        var selector = $(this).hasClass('treeItem') ? $(this).attr('data-selector') : $(this).text().replace(/,\s*$/, "");
         var textArea = document.createElement("textarea");
         textArea.value = selector;
         document.body.appendChild(textArea);
@@ -120,6 +120,7 @@ function loopTree(json, count, parent) {
         var subKey = "";
         var pSel = "";
         var comma = "";
+        var valueDiv = "";
         var keyString = (typeof(key) === 'string') ? '"' + key + '": ' : "";
         var keyQuote = (typeof(key) === 'string') ? '"' + key + '"' : key;
     if (parent) {
@@ -146,12 +147,12 @@ function loopTree(json, count, parent) {
         }
         if (len > i) comma = ", ";
         if ($.type(data) === 'object' || $.type(data) === 'array') {
-            pSel = "<div class='value' data-selector='" + pSel + "'>" + subKey + comma + "</div>"
+            valueDiv = "<div class='value'>" + subKey + comma + "</div>"
         } else {
-            pSel = "<span class='value' data-selector='" + pSel + "'>" + subKey + comma + "</span>"
+            valueDiv = "<span class='value'>" + subKey + comma + "</span>"
         }
 
-        out += "<div class='treeItem tab" + count + "'>" + keyString + pSel + "</div>";
+        out += "<div class='treeItem tab" + count + "' data-selector='"+pSel+"'>" + keyString + valueDiv + "</div>";
         i++;
     });
     return out;
