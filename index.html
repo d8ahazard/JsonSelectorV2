@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JSON Selector V2</title>
+    <title>JSON Selector v2</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/jsonselector.css"/>
 </head>
 <body>
-<div class="header">JSON Selector V2</div>
+<div class="header">JSON Selector v2</div>
 <div class="card card-center text-white bg-secondary mb-3" id="inputCard">
     <div class="card-body">
-        <label for="jsonInput">Paste your JSON Below</label><br>
+        <label for="jsonInput">Paste JSON Below:</label><br>
         <textarea id="jsonInput" class="form-input"></textarea>
     </div>
     <div class="card-footer">
@@ -28,6 +28,59 @@
     </div>
     <div class="card-footer">
         <div class="btn btn-primary" id="clear">CLEAR</div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="btn-group-sm">
+        <a class="btn btn-sm btn-secondary" href="https://github.com/d8ahazard/JsonSelectorV2">Source</a>
+        <div class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#infoModal">About</div>
+        <div class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#donateModal">Donate</div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoModalTitle">Tips:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Click any section/tag to show display it's selector in the selector box.</li>
+                    <li>Double-click the selector box to copy it to the clipboard.</li>
+                    <li>Double-click a value to copy it to the clipboard. Arrays will be copied as JSON.</li>
+                    <li>Double-click any tag/group to copy it's selector to the clipboard.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donateModalTitle">Donate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                If you'd like to donate a few bucks for this sexy app, you can do so by visiting <a href="https://paypal.me/digitalhigh">This Link</a>.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
 </div>
 
