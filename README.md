@@ -29,3 +29,5 @@ This makes things faster, decreases server overhead, and removes limitations on 
 
 6. A touch of bootstrap love to make it pretty.
 
+7. Added a cookie to save your processed data, so it'll be present when you re-open the page (expires in 1 day).
+
