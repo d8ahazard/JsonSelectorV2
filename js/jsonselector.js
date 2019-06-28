@@ -10,7 +10,8 @@ $(function(){
         getJson = decodeURIComponent(getJson);
         $('#jsonInput').val(getJson);
         processInput();
-        window.history.pushState({}, document.title, "/");
+        var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        window.history.replaceState({}, document.title, clean_uri);
     }
 
     $('#process').click(function(){
