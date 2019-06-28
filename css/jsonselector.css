@@ -62,7 +62,7 @@ textarea {
 }
 
 .copiedModal {
-    padding-top: 35px;
+    padding: 15px;
     display: none;
     position: fixed;
     z-index: 100;
@@ -92,51 +92,63 @@ textarea {
 }
 
 .tab1 {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .tab2 {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .tab3 {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .tab4 {
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .tab5 {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .tab6 {
-    margin-left: 120px;
+    margin-left: 60px;
 }
 
 .tab7 {
-    margin-left: 140px;
+    margin-left: 70px;
 }
 
 .tab8 {
-    margin-left: 160px;
+    margin-left: 80px;
 }
 
 .tab9 {
-    margin-left: 180px;
+    margin-left: 90px;
 }
 
 .tab10 {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .tab11 {
-    margin-left: 240px;
+    margin-left: 110px;
 }
 
-.tab0 {
-    margin-left: 0;
+.tab12 {
+    margin-left: 120px;
+}
+
+.tab13 {
+    margin-left: 130px;
+}
+
+.tab14 {
+    margin-left: 140px;
+}
+
+.tab15 {
+    margin-left: 150px;
 }
 
 .treeItem {
