@@ -10,6 +10,7 @@ $(function(){
         getJson = decodeURIComponent(getJson);
         $('#jsonInput').val(getJson);
         processInput();
+        window.history.pushState({}, document.title, "/");
     }
 
     $('#process').click(function(){
