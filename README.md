@@ -3,6 +3,9 @@ A spiritual successor to JSON-Selector-Generator by JoeQuery: https://github.com
 
 ## What is it? ##
 A simple GUI for generating selectors used to access JSON data...with a few new features.
+You can try it here:
+
+https://d8ahazard.github.io/JsonSelectorV2/
 
 ## How does it work? ##
 1. Download the project.
