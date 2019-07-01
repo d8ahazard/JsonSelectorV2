@@ -28,7 +28,7 @@ If it's a sub-array, it will be copied in JSON format.
 4. You can submit JSON to the page via a GET query, versus POST.
 
 5. No server-side processing. The original app would POST data to a server.
-This makes things faster, decreases server overhead, and removes limitations on data sizes.
+This makes things faster, decreases server overhead, and removes limitations on data sizes. (Also, because it stays in-browser, your data is secure)
 
 6. A touch of bootstrap love to make it pretty.
 
